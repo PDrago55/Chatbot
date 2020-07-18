@@ -7,7 +7,7 @@ const trigger = [
   //2
   ["what is going on", "what is up"],
   //3
-  ["happy", "good", "well", "fantastic", "cool"],
+  ["happy", "good", "well", "fantastic", "cool", "great", "ok"],
   //4
   ["bad", "bored", "tired", "sad"],
   //5
@@ -16,6 +16,8 @@ const trigger = [
   ["thanks", "thank you"],
   //7
   ["bye", "good bye", "goodbye"],
+  //8
+  ["media", "find an article?", "news"],
 ];
 
 const reply = [
@@ -39,6 +41,8 @@ const reply = [
   ["You're welcome", "No problem"],
   //7
   ["Goodbye", "See you later"],
+  //8
+  ["I can't find articles yet", "soon, we'll be able to find articles"],
 ];
 
 const alternative = [
@@ -47,6 +51,7 @@ const alternative = [
   "Try again",
   "I'm listening...",
   "Bro...",
+  "Didn't catch that :(",
 ];
 
 const robot = ["How do you do, fellow human", "I am not a bot"];
@@ -55,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const inputField = document.getElementById("input");
   document.querySelector("#input").addEventListener("keydown", function (e) {
     if (e.code === "Enter") {
-      console.log(e.code);
       let input = inputField.value;
       inputField.value = "";
       output(input);

@@ -1,6 +1,6 @@
 ### CHATBOT JS TRIAL
 
-<img src="display.png">
+<img src="newDisplay.png">
 
 With the help of guides, I built a JS Chatbot with scroll animaltions and several talking cues.
 
